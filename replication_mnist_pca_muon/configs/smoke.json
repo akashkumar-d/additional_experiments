@@ -1,0 +1,62 @@
+{
+  "data": {
+    "mnist_source": "data/mnist_train_uint8.npz",
+    "n_train": 600,
+    "pca_dim": 20,
+    "whiten": true,
+    "problem_seed": 2026,
+    "images_key": "images",
+    "labels_key": "labels",
+    "pixel_scale": 255.0,
+    "archive_member": "mnist_muon/mnist.npz"
+  },
+  "teacher": {
+    "rank": 2,
+    "seed": 5,
+    "head_value": 1.0
+  },
+  "student": {
+    "width": 12,
+    "learning_rate": 0.4,
+    "steps": 50,
+    "log_every": 5,
+    "log_both_phases": true,
+    "threads": 1,
+    "checkpoint_steps": [
+      0,
+      10,
+      30,
+      49
+    ]
+  },
+  "seeds": {
+    "development": [
+      1,
+      2
+    ],
+    "confirmation": []
+  },
+  "analysis": {
+    "primary_window": [
+      10,
+      30
+    ],
+    "windows": {
+      "10_30": [
+        10,
+        30
+      ],
+      "20_40": [
+        20,
+        40
+      ]
+    },
+    "bootstrap_repetitions": 500,
+    "plot_xmax": 49
+  },
+  "output": {
+    "experiment_name": "smoke_test",
+    "output_root": "outputs",
+    "problem_filename": "fixed_problem.npz"
+  }
+}

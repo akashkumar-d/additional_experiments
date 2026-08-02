@@ -1,0 +1,2 @@
+n_train,raw_dimension,pca_dimension,whiten,teacher_rank,mean_coordinate_variance,mean_coordinate_fourth_moment,median_coordinate_fourth_moment,minimum_coordinate_fourth_moment,maximum_coordinate_fourth_moment,gaussian_fourth_moment
+5000,784,100,True,4,0.9997999668121338,3.2921026977081294,3.301942303500885,2.309522739918293,3.803816925504699,3.0

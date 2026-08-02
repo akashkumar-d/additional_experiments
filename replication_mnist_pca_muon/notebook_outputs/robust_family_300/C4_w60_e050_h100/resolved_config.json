@@ -1,0 +1,88 @@
+{
+  "analysis": {
+    "bootstrap_repetitions": 20000,
+    "plot_xmax": 299,
+    "primary_window": [
+      40,
+      200
+    ],
+    "windows": {
+      "40_200": [
+        40,
+        200
+      ]
+    }
+  },
+  "data": {
+    "allowed_digits": null,
+    "archive_member": "mnist_muon/mnist.npz",
+    "images_key": "images",
+    "labels_key": "labels",
+    "mnist_source": "/u/akumar3/akum/Muon_SGD/review_session/consolidated_exp_comments/replication_mnist_pca_muon/data/mnist_train_uint8.npz",
+    "n_train": 5000,
+    "pca_dim": 100,
+    "pixel_scale": 255.0,
+    "problem_seed": 2026,
+    "whiten": true
+  },
+  "output": {
+    "experiment_name": "C4_w60_e050_h100",
+    "output_root": "/u/akumar3/akum/Muon_SGD/review_session/consolidated_exp_comments/replication_mnist_pca_muon/notebook_outputs/robust_family_300",
+    "problem_filename": "fixed_problem.npz"
+  },
+  "seeds": {
+    "confirmation": [],
+    "development": [
+      227,
+      229,
+      233,
+      239,
+      241,
+      251,
+      257,
+      263,
+      269,
+      271,
+      277,
+      281,
+      283,
+      293,
+      307,
+      311,
+      313,
+      317,
+      331,
+      337,
+      347,
+      349,
+      353,
+      359,
+      367,
+      373,
+      379,
+      383,
+      389,
+      397
+    ]
+  },
+  "student": {
+    "checkpoint_steps": [
+      0,
+      40,
+      200,
+      299
+    ],
+    "head_value": 0.1,
+    "learning_rate": 0.5,
+    "log_both_phases": true,
+    "log_every": 10,
+    "steps": 300,
+    "threads": 1,
+    "width": 60
+  },
+  "teacher": {
+    "head_value": 1.0,
+    "rank": 4,
+    "seed": 5
+  }
+}

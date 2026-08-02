@@ -1,0 +1,22 @@
+{
+  "source_archive": "mnist_muon.zip",
+  "source_member": "mnist_muon/mnist.npz",
+  "source_keys": [
+    "Xa",
+    "ya"
+  ],
+  "output_keys": [
+    "images",
+    "labels"
+  ],
+  "images_shape": [
+    60000,
+    784
+  ],
+  "images_dtype": "uint8",
+  "labels_shape": [
+    60000
+  ],
+  "labels_dtype": "uint8",
+  "sha256": "59a76a4bca9bec6069d486a90a40d60335fd83cdeb571bffbfdfdd32377cb5bb"
+}

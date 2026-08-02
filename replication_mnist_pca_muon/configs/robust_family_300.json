@@ -1,0 +1,36 @@
+{
+  "steps": 300,
+  "window": [
+    40,
+    200
+  ],
+  "log_every": 10,
+  "threads": 1,
+  "seed_group": "confirmation",
+  "configs": [
+    {
+      "config_id": "C5_w60_e060_h100",
+      "width": 60,
+      "learning_rate": 0.6,
+      "head_multiplier": 1.0
+    },
+    {
+      "config_id": "C3_w50_e060_h125",
+      "width": 50,
+      "learning_rate": 0.6,
+      "head_multiplier": 1.25
+    },
+    {
+      "config_id": "C4_w60_e050_h100",
+      "width": 60,
+      "learning_rate": 0.5,
+      "head_multiplier": 1.0
+    },
+    {
+      "config_id": "C2_w50_e050_h125",
+      "width": 50,
+      "learning_rate": 0.5,
+      "head_multiplier": 1.25
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "analysis": {
+    "bootstrap_repetitions": 20000,
+    "plot_xmax": 1490,
+    "primary_window": [
+      60,
+      240
+    ],
+    "windows": {
+      "1000_1200": [
+        1000,
+        1200
+      ],
+      "1200_1490": [
+        1200,
+        1490
+      ],
+      "240_400": [
+        240,
+        400
+      ],
+      "400_700": [
+        400,
+        700
+      ],
+      "60_1000": [
+        60,
+        1000
+      ],
+      "60_1490": [
+        60,
+        1490
+      ],
+      "60_240": [
+        60,
+        240
+      ],
+      "60_400": [
+        60,
+        400
+      ],
+      "60_700": [
+        60,
+        700
+      ],
+      "700_1000": [
+        700,
+        1000
+      ]
+    }
+  },
+  "data": {
+    "allowed_digits": null,
+    "archive_member": "mnist_muon/mnist.npz",
+    "images_key": "Xa",
+    "labels_key": "ya",
+    "mnist_source": "/u/akumar3/akum/Muon_SGD/review_session/consolidated_experiments/replication_mnist_pca_muon/data/mnist_muon.zip",
+    "n_train": 5000,
+    "pca_dim": 100,
+    "pixel_scale": 255.0,
+    "problem_seed": 2026,
+    "whiten": true
+  },
+  "output": {
+    "experiment_name": "notebook_reproduction",
+    "output_root": "/u/akumar3/akum/Muon_SGD/review_session/consolidated_experiments/replication_mnist_pca_muon/notebook_outputs",
+    "problem_filename": "fixed_problem.npz"
+  },
+  "seeds": {
+    "confirmation": [
+      61,
+      67,
+      71,
+      79,
+      83,
+      89,
+      97,
+      101,
+      103,
+      107,
+      109,
+      113,
+      127,
+      131,
+      137,
+      139,
+      149,
+      151,
+      157,
+      163,
+      167,
+      173,
+      179,
+      181,
+      191,
+      193,
+      197,
+      199,
+      211,
+      223
+    ],
+    "development": [
+      5,
+      11,
+      23,
+      37,
+      41
+    ]
+  },
+  "student": {
+    "checkpoint_steps": [
+      0,
+      60,
+      240,
+      400,
+      700,
+      1000,
+      1200
+    ],
+    "head_value": null,
+    "learning_rate": 0.6,
+    "log_both_phases": true,
+    "log_every": 10,
+    "steps": 1500,
+    "threads": 1,
+    "width": 50
+  },
+  "teacher": {
+    "head_value": 1.0,
+    "rank": 4,
+    "seed": 5
+  }
+}

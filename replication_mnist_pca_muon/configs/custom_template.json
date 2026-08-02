@@ -1,0 +1,106 @@
+{
+  "data": {
+    "mnist_source": "data/mnist_train_uint8.npz",
+    "archive_member": "mnist_muon/mnist.npz",
+    "images_key": "images",
+    "labels_key": "labels",
+    "n_train": 5000,
+    "pca_dim": 100,
+    "whiten": true,
+    "problem_seed": 2026,
+    "allowed_digits": null,
+    "pixel_scale": 255.0
+  },
+  "teacher": {
+    "rank": 4,
+    "seed": 5,
+    "head_value": 1.0
+  },
+  "student": {
+    "width": 50,
+    "head_value": null,
+    "learning_rate": 0.6,
+    "steps": 1500,
+    "log_every": 10,
+    "log_both_phases": true,
+    "threads": 1,
+    "checkpoint_steps": [
+      0,
+      60,
+      240,
+      400,
+      700,
+      1000,
+      1200
+    ]
+  },
+  "seeds": {
+    "development": [
+      5,
+      11,
+      23,
+      37,
+      41
+    ],
+    "confirmation": [
+      61,
+      67,
+      71
+    ]
+  },
+  "analysis": {
+    "primary_window": [
+      60,
+      240
+    ],
+    "windows": {
+      "60_240": [
+        60,
+        240
+      ],
+      "240_400": [
+        240,
+        400
+      ],
+      "400_700": [
+        400,
+        700
+      ],
+      "700_1000": [
+        700,
+        1000
+      ],
+      "1000_1200": [
+        1000,
+        1200
+      ],
+      "1200_1490": [
+        1200,
+        1490
+      ],
+      "60_400": [
+        60,
+        400
+      ],
+      "60_700": [
+        60,
+        700
+      ],
+      "60_1000": [
+        60,
+        1000
+      ],
+      "60_1490": [
+        60,
+        1490
+      ]
+    },
+    "bootstrap_repetitions": 20000,
+    "plot_xmax": 1490
+  },
+  "output": {
+    "experiment_name": "my_custom_experiment",
+    "output_root": "outputs",
+    "problem_filename": "fixed_problem.npz"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "problem_path": "/u/akumar3/akum/Muon_SGD/review_session/consolidated_exp_comments/replication_mnist_pca_muon/data/fixed_problem_reproduction.npz",
+  "steps": 300,
+  "window": [
+    40,
+    200
+  ],
+  "log_every": 10,
+  "threads": 1,
+  "seeds": [
+    227,
+    229,
+    233,
+    239,
+    241,
+    251,
+    257,
+    263,
+    269,
+    271,
+    277,
+    281,
+    283,
+    293,
+    307,
+    311,
+    313,
+    317,
+    331,
+    337,
+    347,
+    349,
+    353,
+    359,
+    367,
+    373,
+    379,
+    383,
+    389,
+    397
+  ],
+  "configs": [
+    {
+      "config_id": "C5_w60_e060_h100",
+      "label": "$r_s=60,\\ \\eta=0.60,\\ h=1.00$",
+      "width": 60,
+      "learning_rate": 0.6,
+      "head_multiplier": 1.0
+    },
+    {
+      "config_id": "C3_w50_e060_h125",
+      "label": "$r_s=50,\\ \\eta=0.60,\\ h=1.25$",
+      "width": 50,
+      "learning_rate": 0.6,
+      "head_multiplier": 1.25
+    },
+    {
+      "config_id": "C4_w60_e050_h100",
+      "label": "$r_s=60,\\ \\eta=0.50,\\ h=1.00$",
+      "width": 60,
+      "learning_rate": 0.5,
+      "head_multiplier": 1.0
+    },
+    {
+      "config_id": "C2_w50_e050_h125",
+      "label": "$r_s=50,\\ \\eta=0.50,\\ h=1.25$",
+      "width": 50,
+      "learning_rate": 0.5,
+      "head_multiplier": 1.25
+    }
+  ]
+}

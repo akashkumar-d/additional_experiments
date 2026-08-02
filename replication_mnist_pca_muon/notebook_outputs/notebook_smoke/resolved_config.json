@@ -1,0 +1,104 @@
+{
+  "analysis": {
+    "bootstrap_repetitions": 500,
+    "plot_xmax": 49,
+    "primary_window": [
+      10,
+      30
+    ],
+    "windows": {
+      "1000_1200": [
+        1000,
+        1200
+      ],
+      "10_30": [
+        10,
+        30
+      ],
+      "1200_1490": [
+        1200,
+        1490
+      ],
+      "20_40": [
+        20,
+        40
+      ],
+      "240_400": [
+        240,
+        400
+      ],
+      "400_700": [
+        400,
+        700
+      ],
+      "60_1000": [
+        60,
+        1000
+      ],
+      "60_1490": [
+        60,
+        1490
+      ],
+      "60_240": [
+        60,
+        240
+      ],
+      "60_400": [
+        60,
+        400
+      ],
+      "60_700": [
+        60,
+        700
+      ],
+      "700_1000": [
+        700,
+        1000
+      ]
+    }
+  },
+  "data": {
+    "allowed_digits": null,
+    "archive_member": "mnist_muon/mnist.npz",
+    "images_key": "Xa",
+    "labels_key": "ya",
+    "mnist_source": "/u/akumar3/akum/Muon_SGD/review_session/consolidated_experiments/replication_mnist_pca_muon/data/mnist_muon.zip",
+    "n_train": 600,
+    "pca_dim": 20,
+    "pixel_scale": 255.0,
+    "problem_seed": 2026,
+    "whiten": true
+  },
+  "output": {
+    "experiment_name": "notebook_smoke",
+    "output_root": "/u/akumar3/akum/Muon_SGD/review_session/consolidated_experiments/replication_mnist_pca_muon/notebook_outputs",
+    "problem_filename": "fixed_problem.npz"
+  },
+  "seeds": {
+    "confirmation": [],
+    "development": [
+      1,
+      2
+    ]
+  },
+  "student": {
+    "checkpoint_steps": [
+      0,
+      10,
+      30,
+      49
+    ],
+    "head_value": null,
+    "learning_rate": 0.4,
+    "log_both_phases": true,
+    "log_every": 5,
+    "steps": 50,
+    "threads": 1,
+    "width": 12
+  },
+  "teacher": {
+    "head_value": 1.0,
+    "rank": 2,
+    "seed": 5
+  }
+}
